@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+.highlight {
+  color: #2d80d3; /* Highlight color */
+}
+
+.home,
+.ourstory,
+.gifts,
+.rsvp,
+.guestattireinfo {
+  height: 140vh;
+}
+
+/*Our Story Section*/
+.story-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+.our-story-header {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 9rem;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.love-text-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+.love-header {
+  font-size: 7rem;
+  font-family: 'Brush Script MT', cursive;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+  margin-bottom: 1%;
+
+}
+
+.love-story {
+  font-size: 4rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+
+}
+
+
+.proposal-header{
+  font-family: 'Brush Script MT', cursive;
+  margin-left: 3%;
+  font-size: 7rem;
+}
+
+.proposal-text {
+  font-size: 4rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  font-family: 'Courier New', Courier, monospace;
+
+
+}
+/* RSVP */
+.rsvp-header {
+  display: grid;
+  font-size: 7rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Brush Script MT', cursive;
+  margin-top: 5%;
+
+}
+.rsvp-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+  background-color: white;
+  box-shadow: inset 0 0 0 25px rgba(0,0,0,0.2);
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+form label {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 3rem;
+}
+form input[type="submit"] {
+  font-size: 3rem;
+  color: gray;
+  border: none;
+  cursor: pointer;
+}
+.rsvp-text,
+.rsvp-text2,
+.rsvp-text3 {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-family: 'Courier New', Courier, monospace;
+
+
+}
+.rsvp-text3 {
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+/*Gifts Section*/
+.gifts-header {
+  margin-top: 10%;
+  font-size: 10rem;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: bold;
+}
+.gifts-container {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift-box {
+  background-color:antiquewhite;
+  padding: 3%;
+  border-radius: 40px;
+  box-shadow: inset 0 0 0 10px rgba(0,0,0,0.2);
+  max-width: 65%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  margin-top: 2%;
+}
+.gift-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+}
