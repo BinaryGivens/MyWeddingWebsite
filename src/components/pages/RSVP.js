@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../../App.css';
+import {useNavigate} from 'react-router-dom';
 
 function RSVP() { 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,10 +21,7 @@ function RSVP() {
         });
 
         if (response.ok) {
-            alert('Submission saved!');
-            setName('');
-            setEmail('');
-            setPhone('');
+            navigate('/rsvpconfirmationpage')
         } else {
             console.error('Error submitting form');
         }
@@ -77,7 +76,7 @@ function RSVP() {
               required 
             />
           </label>
-          <input type="submit" id="rsvp" value="RSVP" />
+          <input type="submit" id="rsvp" value="RSVP" path='/rsvpconfirmationpage'/>
         </form>
       </div>
     </>

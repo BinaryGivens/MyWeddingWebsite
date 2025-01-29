@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.10.8 on win32)" generated="2025-01-28T17:13:02.235765" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\markiece givens\PycharmProjects\testproject\tests">
+<suite id="s1-s1" name="Test1" source="C:\Users\markiece givens\PycharmProjects\testproject\tests\test1.robot">
+<test id="s1-s1-t1" name="Positive RSVP Submission Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:02.498855" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/rsvp'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T17:13:02.498855" elapsed="1.844109"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:04.342964" level="INFO">Typing text 'John Doe' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.342964" elapsed="0.091076"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:04.449666" level="INFO">Typing text 'johndoe@example.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>johndoe@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.449666" elapsed="0.091682"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:04.541348" level="INFO">Typing text '1234567890' into text field 'id=number'.</msg>
+<arg>id=number</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.541348" elapsed="0.094833"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:04.636181" level="INFO">Clicking button 'id=rsvp'.</msg>
+<arg>id=rsvp</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.636181" elapsed="0.070314"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:04.735305" level="INFO">Element 'id=confirm' contains text 'Your information has to be successfully sent. Thank you for your RSVP. Invitation will be sent out soon using the information you submitted.'.</msg>
+<arg>id=confirm</arg>
+<arg>Your information has to be successfully sent. Thank you for your RSVP. Invitation will be sent out soon using the information you submitted.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.717832" elapsed="0.017473"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-28T17:13:04.735305" elapsed="2.124256"/>
+</kw>
+<status status="PASS" start="2025-01-28T17:13:02.498855" elapsed="4.360706"/>
+</test>
+<status status="PASS" start="2025-01-28T17:13:02.251398" elapsed="4.608163"/>
+</suite>
+<suite id="s1-s2" name="Test2" source="C:\Users\markiece givens\PycharmProjects\testproject\tests\test2.robot">
+<test id="s1-s2-t1" name="Negative RSVP Submission Test (no name)" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:06.859561" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/rsvp'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T17:13:06.859561" elapsed="1.833931"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:08.693492" level="INFO">Typing text 'johndoe@example.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>johndoe@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:08.693492" elapsed="0.103090"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:08.796582" level="INFO">Typing text '1234567890' into text field 'id=number'.</msg>
+<arg>id=number</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:08.796582" elapsed="0.067549"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:08.864131" level="INFO">Clicking button 'id=rsvp'.</msg>
+<arg>id=rsvp</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:08.864131" elapsed="0.097221"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:09.222408" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T17:13:09.222408" level="FAIL">Element with locator 'id=confirm' not found.</msg>
+<arg>id=confirm</arg>
+<arg>Your information has to be successfully sent. Thank you for your RSVP. Invitation will be sent out soon using the information you submitted.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-01-28T17:13:08.962354" elapsed="0.260054">Element with locator 'id=confirm' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-28T17:13:09.222408" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-28T17:13:06.859561" elapsed="2.362847">Element with locator 'id=confirm' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-28T17:13:06.859561" elapsed="2.362847"/>
+</suite>
+<suite id="s1-s3" name="Test3" source="C:\Users\markiece givens\PycharmProjects\testproject\tests\test3.robot">
+<test id="s1-s3-t1" name="Negative RSVP Submission Test (no email)" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:09.230818" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/rsvp'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T17:13:09.226684" elapsed="1.836581"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:11.065802" level="INFO">Typing text 'John Doe' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:11.063265" elapsed="0.126636"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:11.189901" level="INFO">Typing text '1234567890' into text field 'id=number'.</msg>
+<arg>id=number</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:11.189901" elapsed="0.080181"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:11.271152" level="INFO">Clicking button 'id=rsvp'.</msg>
+<arg>id=rsvp</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:11.270082" elapsed="0.089274"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:11.641661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T17:13:11.641661" level="FAIL">Element with locator 'id=confirm' not found.</msg>
+<arg>id=confirm</arg>
+<arg>Your information has to be successfully sent. Thank you for your RSVP. Invitation will be sent out soon using the information you submitted.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-01-28T17:13:11.359356" elapsed="0.282305">Element with locator 'id=confirm' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-28T17:13:11.641661" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-28T17:13:09.226684" elapsed="2.414977">Element with locator 'id=confirm' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-28T17:13:09.226684" elapsed="2.419369"/>
+</suite>
+<suite id="s1-s4" name="Test4" source="C:\Users\markiece givens\PycharmProjects\testproject\tests\test4.robot">
+<test id="s1-s4-t1" name="Negative RSVP Submission Test (no number)" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:11.651875" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/rsvp'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T17:13:11.650877" elapsed="1.985743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:13.637622" level="INFO">Typing text 'John Doe' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:13.637622" elapsed="0.119275"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:13.757897" level="INFO">Typing text 'johndoe@example.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>johndoe@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:13.756897" elapsed="0.089740"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:13.848029" level="INFO">Clicking button 'id=rsvp'.</msg>
+<arg>id=rsvp</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T17:13:13.847696" elapsed="0.112602"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-28T17:13:14.253575" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T17:13:14.253575" level="FAIL">Element with locator 'id=confirm' not found.</msg>
+<arg>id=confirm</arg>
+<arg>Your information has to be successfully sent. Thank you for your RSVP. Invitation will be sent out soon using the information you submitted.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-01-28T17:13:13.960819" elapsed="0.292756">Element with locator 'id=confirm' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-28T17:13:14.253575" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-28T17:13:11.650733" elapsed="2.602842">Element with locator 'id=confirm' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-28T17:13:11.646053" elapsed="2.611072"/>
+</suite>
+<status status="FAIL" start="2025-01-28T17:13:02.235765" elapsed="12.021360"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="3" skip="0">Tests</stat>
+<stat name="Test1" id="s1-s1" pass="1" fail="0" skip="0">Tests.Test1</stat>
+<stat name="Test2" id="s1-s2" pass="0" fail="1" skip="0">Tests.Test2</stat>
+<stat name="Test3" id="s1-s3" pass="0" fail="1" skip="0">Tests.Test3</stat>
+<stat name="Test4" id="s1-s4" pass="0" fail="1" skip="0">Tests.Test4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

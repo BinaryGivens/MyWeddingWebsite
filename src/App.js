@@ -5,7 +5,7 @@ import OurStory from './components/pages/OurStory';
 import RSVP from './components/pages/RSVP';
 import GuestAttireInfo from './components/pages/GuestAttireInfo';
 import Gifts from './components/pages/Gifts';
-
+import RSVPConfirmationPage from './components/pages/RSVPConfirmationPage';
 
 import {BrowserRouter as Router, 
   Route, 
@@ -24,6 +24,7 @@ function App() {
           <Route path='/rsvp' exact element={<RSVP/>}/>
           <Route path='/guestattireinfo' exact element={<GuestAttireInfo/>}/>
           <Route path='/gifts' exact element={<Gifts/>}/>
+          <Route path='/rsvpconfirmationpage' exact element={<RSVPConfirmationPage/>}/>
         </Routes>
       </Router>
     </>

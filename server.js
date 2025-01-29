@@ -11,7 +11,7 @@ app.use(express.json());  // Middleware to parse JSON request body
 // POST route to handle form submission
 app.post('/submit', (req, res) => {
     const { name, email, phone } = req.body;
-    console.log(`Received submission: ${name}, ${email}, ${phone}`);
+    // console.log(`Received submission: ${name}, ${email}, ${phone}`);
 
     // Write data to submissions.txt
     const data = `Name: ${name}, Email: ${email}, Phone: ${phone}\n`;
